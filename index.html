@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Chapter 77 - Legend Of A Rainbow</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#080a18;overflow:hidden;font-family:monospace;color:#ccddff}
+#story{position:absolute;inset:0;z-index:99;background:radial-gradient(#1a1a3a,#080a18);overflow:auto;padding:10px}
+.gold{color:#ff88ff;text-shadow:0 0 8px #ff44ff}
+.hud{position:absolute;background:rgba(0,0,0,.86);border:2px solid #ff88ff;border-radius:8px;padding:6px;font-size:11px;z-index:10}
+#hudL{top:5px;left:5px;width:320px}
+#hudR{top:5px;right:5px;width:360px;max-height:92vh;overflow:auto;font-size:10px}
+#map{position:absolute;bottom:5px;right:5px;width:140px;height:140px;background:#000;border:2px solid #ff88ff;z-index:10}
+button{background:linear-gradient(90deg,#ff44ff,#88ccff,#ffcc00);color:#000;border:0;padding:8px 14px;border-radius:6px;font-weight:bold;cursor:pointer;margin:3px}
+</style>
+<script type="importmap">{"imports":{"three":"https://unpkg.com/three@0.160.0/build/three.module.js"}}</script>
+</head>
+<body>
+<div id="story">
+<h2 class="gold" style="text-align:center">Chapter 77: Legend Of A Rainbow<br>April 14 2020 - Homer Allan Degeneres And The Rages Band</h2>
+<div style="max-width:850px;margin:8px auto;background:rgba(255,136,255,0.07);border:1px solid #ff88ff;border-radius:6px;padding:8px;white-space:pre-wrap;font-size:10px;line-height:1.4">
+Chapter 1: Introduction To The Kids Wishes The Imagination And It Fades Away Because Of Pride Kid Then Kids Rejected Him Because Of Selfishness In Sharing Thoughts Or Not Knowing And Kept Secrecy Once upon a time the kids in the town of Gargamel wants to care and make an imaginations come alive and true. Suddenly they didn't notice in the peep of the clouds. There is an appearing rainbow came wanted to stare the kids. There is an appearing Rainbow came. The kids figure out in town of Gargamel. Why there's rainbow there. The kids say, All of you guys. Let us go with that rainbow. As they want to go through that rainbow but cannot. Because they can't either fly but run instead. The kids can't do it saying, Oh no! why we can't fly to reach the rainbow? What can we do for that rainbow? Is this rainbow got wishes? When the kids say the wishes. The rainbow bursts with gold of it. And then appeared a magic pot. The kids known that their imaginations worked by saying wishes. Then wishes comes alive at last and comes true. As they seen the magic pot. The wicked witch Rengreng appeared on a magic pot and said, You kids in the town of Gargamel. If you wish all of your imaginations may become alive. I have 1 condition. First in order to make your imagination as endless. You must be generous and not selfish of sharing else dreams if its good or bad. And if you disappoint me. All of the shared dreams will fade away. If you are selfish. Wicked witch Rengreng disappeared. And the kids know about the wicked witch said. Kids said, Ok kids you understand the witch! To be endless in imagination of our dreams. We need to share our dreams. Or else being selfish all of it fades away. As the kids understand it. Suddenly there is a pride of not believing what kids do. The kid is not sharing dreams to other kids. As the wicked witch Rengreng saw it in magical pot of rainbow. "Legend Of A Rainbow" fades away and never returned back. As the story ends, because the pride kid not shows its passion n sharing imagination and dreams. All of the kids is angry in the town of Gargamel. Kids said, Hey you! Kid of pride we don't need you anymore! You erase and fade our dreams and imagination. Because you are selfish in not sharing your own dreams and imagination with us! As the stubborn of a pride kid. All kids reject him. While the pride kid never dreams now because all of the dreams of life erased by the wicked witch Rengreng. That's all the "Legend Of A Rainbow". Moral Lesson: Don't be selfish to share our thoughts, feelings and dreams for humble. If you don't care anything about thoughts and feelings. They will not know what's your passion. Or if its biography. Without knowing your story or life story. It would be not interesting in keeping a secret for pride.
+</div>
+<center><p class="gold">Gargamel Town Kids Imagination Come Alive True | Peep Clouds Appearing Rainbow Stare Kids | Let Us Go With That Rainbow Can't Fly But Run | Oh No Why Can't Fly To Reach Rainbow What Can We Do Rainbow Got Wishes | Rainbow Bursts Gold Magic Pot Wishes Comes Alive Comes True | Wicked Witch Rengreng Appeared Magic Pot You Kids Gargamel If You Wish All Imaginations May Become Alive I Have 1 Condition First In Order To Make Imagination Endless You Must Be Generous Not Selfish Sharing Else Dreams If Good Or Bad If You Disappoint Me All Shared Dreams Will Fade Away If Selfish | Ok Kids You Understand Witch To Be Endless Imagination Dreams Need Share Dreams Or Else Being Selfish All Fades Away | Pride Not Believing Kids Do Kid Not Sharing Dreams Other Kids Wicked Witch Rengreng Saw Magical Pot Rainbow Legend Of Rainbow Fades Away Never Returned Back | Pride Kid Not Shows Passion Sharing Imagination Dreams All Kids Angry Gargamel Hey You Kid Of Pride We Don't Need You Anymore You Erase Fade Our Dreams Imagination Because You Are Selfish Not Sharing Own Dreams Imagination With Us Stubborn Pride Kid All Kids Reject Him While Pride Kid Never Dreams Now Because All Dreams Life Erased Wicked Witch Rengreng | Moral Don't Be Selfish Share Thoughts Feelings Dreams For Humble If You Don't Care Anything About Thoughts Feelings They Will Not Know What's Your Passion Or If Its Biography Without Knowing Story Life Story Would Be Not Interesting Keeping Secret For Pride</p>
+<p style="font-size:10px">WASD Move Kid | E Share Dreams Generous Not Selfish | Q Wish Rainbow Gold Pot | Click Dispel Pride</p>
+<button onclick="start()" style="font-size:18px;padding:12px 28px">PLAY NOW - RAINBOW ULTRA LIGHT IBANG GAME</button></center>
+</div>
+
+<div class="hud" id="hudL">
+<div class="gold">Kid Gargamel Lv <span id="lv">1</span> - Legend Rainbow</div>
+<div>Imagination - Wishes Come Alive True Endless Generous</div><div style="background:#000;height:10px;border:1px solid #f8f"><div id="hp" style="width:35%;height:100%;background:linear-gradient(90deg,#f44,#ff0,#0f0,#0ff,#88f)"></div></div>
+<div>Sharing - Generous Not Selfish Sharing Else Dreams Good Bad</div><div style="background:#000;height:10px;border:1px solid #f8f"><div id="share" style="width:20%;height:100%;background:#88ff88"></div></div>
+<div>Dreams - Magic Pot Gold Bursts Wishes Comes Alive</div><div style="background:#000;height:10px;border:1px solid #f8f"><div id="dream" style="width:25%;height:100%;background:#ffcc00"></div></div>
+</div>
+<div class="hud" id="hudR">
+<div class="gold" id="qm">MAIN: Gargamel Town Kids Imagination Rainbow Gold Magic Pot</div>
+<div id="qd">Kids in town Gargamel wants care make imaginations come alive true Suddenly didn't notice peep clouds There is appearing rainbow came wanted stare kids There is appearing Rainbow came Kids figure out town Gargamel Why there's rainbow there Kids say All of you guys Let us go with that rainbow As they want to go through that rainbow but cannot Because they can't either fly but run instead Kids can't do it saying Oh no why we can't fly to reach rainbow What can we do for that rainbow Is this rainbow got wishes When kids say wishes rainbow bursts with gold of it And then appeared magic pot Kids known that their imaginations worked by saying wishes Then wishes comes alive at last comes true As they seen magic pot Wicked witch Rengreng appeared on magic pot and said You kids town Gargamel If you wish all imaginations may become alive I have 1 condition First in order to make imagination as endless You must be generous and not selfish of sharing else dreams if its good or bad And if you disappoint me All shared dreams will fade away If you are selfish Wicked witch Rengreng disappeared And kids know about wicked witch said Kids said Ok kids you understand witch To be endless in imagination of our dreams We need to share our dreams Or else being selfish all of it fades away As kids understand it Suddenly there is pride of not believing what kids do Kid is not sharing dreams to other kids As wicked witch Rengreng saw it in magical pot of rainbow Legend Of Rainbow fades away never returned back As story ends because pride kid not shows its passion n sharing imagination and dreams All kids is angry town Gargamel Kids said Hey you Kid of pride we don't need you anymore You erase and fade our dreams and imagination Because you are selfish in not sharing your own dreams and imagination with us As stubborn pride kid All kids reject him While pride kid never dreams now because all dreams life erased wicked witch Rengreng That's all Legend Of Rainbow Moral Don't be selfish to share thoughts feelings dreams for humble If you don't care anything about thoughts feelings They will not know what's your passion Or if its biography Without knowing your story life story It would be not interesting in keeping secret for pride</div>
+<hr><div id="qs" style="font-size:9px"></div>
+</div>
+<canvas id="map"></canvas>
+
+<script type="module">
+import * as THREE from 'three';
+let scene,camera,renderer,player,keys={};
+let ST={imag:35,share:20,dream:25,lv:1};
+let pots=[],enemies=[],npcs=[];
+window.start=()=>{document.getElementById('story').style.display='none';init();};
+function init(){
+scene=new THREE.Scene();scene.background=new THREE.Color(0x080a18);
+scene.fog=new THREE.Fog(0x080a18,12,40);
+camera=new THREE.PerspectiveCamera(70,innerWidth/innerHeight,0.1,100);
+renderer=new THREE.WebGLRenderer({antialias:false});renderer.setSize(innerWidth,innerHeight);document.body.appendChild(renderer.domElement);
+scene.add(new THREE.AmbientLight(0xffffff,0.9));
+let ground=new THREE.Mesh(new THREE.PlaneGeometry(100,100),new THREE.MeshBasicMaterial({color:0x10102a}));ground.rotation.x=-1.57;scene.add(ground);
+// rainbow arch - IBANG DESIGN
+let rainbowColors=[0xff0000,0xff8800,0xffff00,0x00ff00,0x0088ff,0x8800ff];
+for(let i=0;i<6;i++){
+  let arch=new THREE.Mesh(new THREE.TorusGeometry(12+i*1.2,0.18,4,20,Math.PI),new THREE.MeshBasicMaterial({color:rainbowColors[i]}));
+  arch.rotation.x=Math.PI/2; arch.position.set(0,0,-18); scene.add(arch);
+}
+let g=new THREE.Group();
+let body=new THREE.Mesh(new THREE.CapsuleGeometry(0.28,0.5,2,4),new THREE.MeshBasicMaterial({color:0x66ccff}));body.position.y=0.6;g.add(body);
+let head=new THREE.Mesh(new THREE.SphereGeometry(0.28,6,6),new THREE.MeshBasicMaterial({color:0xffdbac}));head.position.y=1.1;g.add(head);
+g.position.set(0,0,10);scene.add(g);player=g;
+function addNPC(x,z,name,txt,col){let m=new THREE.Mesh(new THREE.CapsuleGeometry(0.25,0.5,2,4),new THREE.MeshBasicMaterial({color:col}));m.position.set(x,0.5,z);m.userData={txt:txt};scene.add(m);npcs.push(m);}
+addNPC(-7,0,"Gargamel Kids Imagination Come Alive True Can't Fly But Run","Kids in town Gargamel wants care make imaginations come alive true Suddenly didn't notice peep clouds There is appearing rainbow came wanted stare kids There is appearing Rainbow came Kids figure out town Gargamel Why there's rainbow there Kids say All of you guys Let us go with that rainbow As they want to go through that rainbow but cannot Because they can't either fly but run instead Kids can't do it saying Oh no why we can't fly to reach rainbow What can we do for that rainbow Is this rainbow got wishes",0x88ff88);
+addNPC(7,0,"Wicked Witch Rengreng Magic Pot Gold Bursts Condition Generous Not Selfish","When kids say wishes rainbow bursts with gold of it And then appeared magic pot Kids known that their imaginations worked by saying wishes Then wishes comes alive at last comes true As they seen magic pot Wicked witch Rengreng appeared on magic pot and said You kids town Gargamel If you wish all imaginations may become alive I have 1 condition First in order to make imagination as endless You must be generous and not selfish of sharing else dreams if its good or bad And if you disappoint me All shared dreams will fade away If you are selfish Wicked witch Rengreng disappeared",0xff88ff);
+addNPC(0,6,"Pride Kid Not Sharing Dreams Selfish Fade Erase Dreams Rejected Angry","As kids understand it Suddenly there is pride of not believing what kids do Kid is not sharing dreams to other kids As wicked witch Rengreng saw it in magical pot of rainbow Legend Of Rainbow fades away never returned back As story ends because pride kid not shows its passion n sharing imagination and dreams All kids is angry town Gargamel Kids said Hey you Kid of pride we don't need you anymore You erase and fade our dreams and imagination Because you are selfish in not sharing your own dreams and imagination with us As stubborn pride kid All kids reject him While pride kid never dreams now because all dreams life erased wicked witch Rengreng Moral Don't be selfish share thoughts feelings dreams for humble If you don't care anything about thoughts feelings They will not know what's your passion Or if its biography Without knowing story life story It would be not interesting keeping secret for pride",0xffcc00);
+for(let i=0;i<12;i++){let pot=new THREE.Mesh(new THREE.CylinderGeometry(0.25,0.3,0.4,6),new THREE.MeshBasicMaterial({color:0xffcc00}));pot.position.set((Math.random()-0.5)*20,0.2,(Math.random()-0.5)*20);scene.add(pot);pots.push(pot);}
+for(let i=0;i<3;i++){let en=new THREE.Mesh(new THREE.BoxGeometry(0.7,1.0,0.5),new THREE.MeshBasicMaterial({color:0x550055}));en.position.set((Math.random()-0.5)*18,0.5,(Math.random()-0.5)*18-8);en.userData={hp:60};scene.add(en);enemies.push(en);}
+window.addEventListener('keydown',e=>{keys[e.key.toLowerCase()]=true;let k=e.key.toLowerCase();if(k=='e'){ST.share=Math.min(100,ST.share+20);ST.imag=Math.min(100,ST.imag+10);}if(k=='q'){ST.dream=Math.min(100,ST.dream+18);}});
+window.addEventListener('keyup',e=>keys[e.key.toLowerCase()]=false);
+window.addEventListener('mousedown',()=>{enemies.forEach((en,i)=>{if(en.position.distanceTo(player.position)<2.3){en.userData.hp-=35;if(en.userData.hp<=0){scene.remove(en);enemies.splice(i,1);ST.share+=14;ST.imag+=8;if(enemies.length==0)win();}}});});
+renderer.domElement.addEventListener('click',()=>renderer.domElement.requestPointerLock());
+window.addEventListener('mousemove',e=>{if(document.pointerLockElement)player.rotation.y-=e.movementX*0.004;});
+loop();
+}
+function win(){
+document.getElementById('qm').innerText="LEGEND OF RAINBOW - ENDLESS IMAGINATION - GENEROUS NOT SELFISH!";
+document.getElementById('qd').innerHTML="Wishes comes alive at last and comes true magic pot gold bursts rainbow. To be endless in imagination of our dreams. We need to share our dreams. Or else being selfish all of it fades away.<br><b>Moral: Don't be selfish to share our thoughts, feelings and dreams for humble. If you don't care anything about thoughts and feelings. They will not know what's your passion. Or if its biography. Without knowing your story or life story. It would be not interesting in keeping a secret for pride.</b>";
+setTimeout(()=>alert("YOU WIN Chapter 77 Legend Of A Rainbow! Gargamel Town Kids Imagination Come Alive True Peep Clouds Appearing Rainbow Stare Kids Let Us Go With That Rainbow Can't Fly But Run Oh No Why Can't Fly To Reach Rainbow What Can We Do Rainbow Got Wishes Rainbow Bursts Gold Magic Pot Wishes Comes Alive Comes True Wicked Witch Rengreng Appeared Magic Pot You Kids Gargamel If You Wish All Imaginations May Become Alive I Have 1 Condition First In Order To Make Imagination Endless You Must Be Generous Not Selfish Sharing Else Dreams If Good Or Bad If You Disappoint Me All Shared Dreams Will Fade Away If Selfish Disappeared Ok Kids You Understand Witch To Be Endless Imagination Dreams Need Share Dreams Or Else Being Selfish All Fades Away Pride Not Believing Kids Do Kid Not Sharing Dreams Other Kids Wicked Witch Rengreng Saw Magical Pot Rainbow Legend Of Rainbow Fades Away Never Returned Back Pride Kid Not Shows Passion Sharing Imagination Dreams All Kids Angry Gargamel Hey You Kid Of Pride We Don't Need You Anymore You Erase Fade Our Dreams Imagination Because You Are Selfish Not Sharing Own Dreams Imagination With Us Stubborn Pride Kid All Kids Reject Him While Pride Kid Never Dreams Now Because All Dreams Life Erased Wicked Witch Rengreng Moral Don't Be Selfish Share Thoughts Feelings Dreams For Humble If You Don't Care Anything About Thoughts Feelings They Will Not Know What's Your Passion Or If Its Biography Without Knowing Story Life Story Would Be Not Interesting Keeping Secret For Pride"),600);
+}
+function loop(){
+requestAnimationFrame(loop);
+let sp=0.16;
+if(keys['w'])player.translateZ(-sp);
+if(keys['s'])player.translateZ(sp*0.6);
+if(keys['a'])player.translateX(-sp*0.6);
+if(keys['d'])player.translateX(sp*0.6);
+pots.forEach((p,i)=>{if(p.position.distanceTo(player.position)<1.4){scene.remove(p);pots.splice(i,1);ST.dream=Math.min(100,ST.dream+12);ST.imag+=6;}});
+enemies.forEach(en=>{if(en.position.distanceTo(player.position)<14){en.lookAt(player.position);let d=new THREE.Vector3().subVectors(player.position,en.position).normalize().multiplyScalar(0.02);en.position.add(d);if(en.position.distanceTo(player.position)<1.2)ST.share=Math.max(0,ST.share-0.12);}});
+camera.position.copy(player.position).add(new THREE.Vector3(0,3,6).applyQuaternion(player.quaternion));camera.lookAt(player.position);
+document.getElementById('hp').style.width=ST.imag+'%';
+document.getElementById('share').style.width=ST.share+'%';
+document.getElementById('dream').style.width=ST.dream+'%';
+document.getElementById('qs').innerHTML=`Imagination ${Math.round(ST.imag)}% Wishes Come Alive True Endless Peep Clouds Appearing Rainbow Can't Fly But Run<br>Sharing ${Math.round(ST.share)}% Generous Not Selfish Sharing Else Dreams Good Bad Or Else All Fades Away Pride Selfish Erase Fade Dreams Rejected<br>Dreams ${Math.round(ST.dream)}% Magic Pot Gold Bursts Wishes Comes Alive Comes True - Collect Pots<br>Pots ${pots.length} Gold Magic Pot Rainbow Bursts - Collect Wishes<br>Enemies ${enemies.length} Pride Kid Selfish Not Sharing Dreams Wicked Witch Rengreng Fade Never Returned Back Erase Dreams<br>E Share Dreams Generous Not Selfish, Q Wish Rainbow Gold Pot<br>Goal Sharing 70%+ Imagination 60%+ Dreams 50%+ - Endless Imagination - Not Selfish`;
+let ctx=document.getElementById('map').getContext('2d');ctx.fillStyle='#000';ctx.fillRect(0,0,140,140);ctx.fillStyle='#f8f';ctx.fillRect(70+player.position.x*2,70+player.position.z*2,4,4);enemies.forEach(en=>{ctx.fillStyle='#a0a';ctx.fillRect(70+en.position.x*2,70+en.position.z*2,3,3);});pots.forEach(p=>{ctx.fillStyle='#ff0';ctx.fillRect(70+p.position.x*2,70+p.position.z*2,2,2);});
+if(ST.share<=0&&ST.imag<10){alert('Game Over! Legend Of Rainbow Fades Away Never Returned Back! Pride Kid Not Sharing Dreams Selfish Erase Fade Dreams Rejected Angry! Be Generous Not Selfish Sharing Dreams!');location.reload();}
+renderer.render(scene,camera);
+}
+</script>
+</body>
+</html>
